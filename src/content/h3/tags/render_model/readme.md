@@ -37,7 +37,7 @@ Commonly used marker names without hard-coded behaviour include:
 * `primary_ejection`: Used to indicate where casings fly out when firing the primary trigger.
 
 # Regions
-Regions are named sections of the model which can have multiple [permutations](#permutations). There is a maximum of 16 regions. Region names are used by the engine to relate parts of the render model with the [collision model](~). For example, a Flood combat form losing an arm.
+Regions are named sections of the model which can have multiple [permutations](#permutations). There is a maximum of 16 regions. Region names are used by the engine to relate parts of the render model with the [collision model](~collision_model). For example, a Flood combat form losing an arm.
 
 Regions render in the order they are stored in the tag. When naming regions, consider that they will be sorted by name when compiled into the `.render_model`. This can be important for [skyboxes](~skyboxes#regions) and objects with multiple layers of alpha-blended transparent shaders need a correct sorting order to be explicitly defined otherwise they won't look right.
 
