@@ -9,7 +9,7 @@ The render_model tag contains the markers and visual geometry for [objects](~obj
 Each part of a model can reference a different [shader](~), like the Warthog's windscreen uses a glass.shader while its body uses an exterior.shader. Shaders can various properties and settings as well as different material types which affects how projectiles and other things interact with them. Some parts of a model use a [shader_decal](~) which is used for stickers, decals, and similar types of textures with transparent backgrounds.
 
 # Nodes
-Nodes can be thought of as the model's "skeleton" and can be animated to move parts of the model. Each vertex can be influenced by up to 2 nodes. Nodes are also known as bones.
+Nodes can be thought of as the model's "skeleton" and can be animated to move parts of the model. Each vertex can be influenced by up to 2 nodes. Nodes are also known as bones in other games or programs.
 
 # Markers
 Markers are simple named points with orientation attached to a model. Think of them as hardpoints. Since they are parented by nodes, they can be animated. Markers can be used for a variety of purposes, such as attaching objects together, both through model attachments such as a Scorpion turret or with scripts (e.g. Pelicans carrying Warthogs), attaching widgets like [antenna](~), or firing [projectiles](~projectile) from in the case of weapons. You can view object markers with `render_model_markers 1`.
@@ -30,7 +30,6 @@ This tag only contains the marker data but other tags usually determine how they
 * `hover_thrusters`:
   * When used on a vehicle with "alien scout" or "alien fighter" [vehicle physics type](~vehicle#tag-field-vehicle-type), spawns [an effect](~vehicle#tag-field-effect) when the vehicle is hovering close to the ground. This can be seen at a piloted Banshee's wingtips when sitting on the ground.
   * When the vehicle physics type is "human plane", creates a similar dust effect if the marker is pointed at nearby ground. Used for the Pelican's thrusters.
-* `jet_thrusters`: Can also be used for vehicles with "human plane" physics to create the Pelican's thruster dust effect.
 
 Commonly used marker names without hard-coded behaviour include:
 
